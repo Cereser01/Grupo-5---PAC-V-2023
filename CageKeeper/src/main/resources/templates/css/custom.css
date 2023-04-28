@@ -1,0 +1,86 @@
+body, html{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(102, 102, 102);
+    color: white;
+}
+#header{
+ width: 100%;   
+ background-color: transparent;
+ transition: background ease-out 0.2s;
+}
+#header.active{
+    position: fixed;
+    background: rgb(20, 20, 20);;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+    z-index:999;
+}
+#header .navbar-collapse {
+    width: auto;
+    flex-grow:0;
+}
+#header .nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: white;
+    border-bottom: solid 4px transparent;
+    
+}
+#header .nav-link:hover{
+    border-bottom:solid 4px var(--secondary);
+    color: var(--secondary);
+}
+
+#slider h1{
+    font-weight: 900;
+}
+#slider h4{
+    font-weight: 300;
+}
+
+#boxes a.destaque{
+display: block;
+background: rgb(228, 228, 228);
+border-radius: 5px;
+text-align: center;
+padding: 20px;
+color:black;
+text-decoration:none ;
+transition: all ease-out .2s;
+}
+
+#boxes a.destaque:hover{
+    background: rgb(158, 158, 158);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+#boxes h2{
+    border-bottom: solid 4px white;
+}
+
+#textao div.row{
+    margin-top: 100px;;
+}
+#textao div.texto{
+    padding: 40px;
+    border-radius: 5px;
+    background:rgb(228, 228, 228); ;
+    color: black;
+}
+
+#team div.container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#team div.caixa{
+    display: block;
+    border-radius: 5px;
+    background:rgb(228, 228, 228); 
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+.equipeimg{
+    border-radius: 50%;
+}
