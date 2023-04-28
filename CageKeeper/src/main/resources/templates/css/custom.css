@@ -5,7 +5,7 @@ body, html{
 }
 #header{
  width: 100%;   
- background-color: transparent;
+ background-color: rgb(20, 20, 20);
  transition: background ease-out 0.2s;
 }
 #header.active{
