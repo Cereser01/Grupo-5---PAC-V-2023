@@ -3,18 +3,21 @@ package br.com.cagekeeper.CageKeeper;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 
-@SpringBootApplication
-public class CageKeeperApplication {
+import br.com.cagekeeper.dao.UsuarioRepository;
 
-	public static void main(String[] args) {
-		SpringApplication.run(CageKeeperApplication.class, args);
-		usuarioSalvaTest();
-	}
-	public static void usuarioSalvaTest() {
+@SpringBootTest
+public class UsuarioRepositoryTest {
+	
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	
+	@Test
+	public void usuarioSalvaTest() {
 		Dados data = new Dados();
 		List lista = new ArrayList<>();
 		lista.add("Senha 1");
