@@ -25,10 +25,13 @@ public class Usuario {
     }
 
     public String getPassword() {
-        return this.password;
+        String a = this.password;
+        a = decriptografar(a);
+        return a;
     }
 
     public void setPassword(String password) {
+        password = criptografar(password);
         this.password = password;
     }
 
@@ -37,8 +40,11 @@ public class Usuario {
     }
 
     public void setDados(Dados dados) {
+        //tem que aplicar criptografia
         this.dados = dados;
     }
+    //Método criptografia XOR - soma uma string com outra, repete.
+    //Tem que testar, ver a questão de segurança.
     public String criptografar(String plaintext) {
     String key = this.Nome;
     StringBuilder ciphertext = new StringBuilder();
