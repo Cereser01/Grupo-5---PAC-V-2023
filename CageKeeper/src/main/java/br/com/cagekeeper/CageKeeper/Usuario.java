@@ -1,6 +1,7 @@
 package br.com.cagekeeper.CageKeeper;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
@@ -10,7 +11,18 @@ public class Usuario {
     private Long id;
     private String Nome;
     private String password;
-    private Dados dados;
+    private String dados;
+
+    public String getDados() {
+        String a = this.dados;
+        decriptografar(a);
+        return a;
+    }
+
+    public void setDados(String dados) {
+        String a = criptografar(dados);
+        this.dados = a;
+    }
 
     public Long getId(){
         return this.id;
@@ -31,18 +43,11 @@ public class Usuario {
     }
 
     public void setPassword(String password) {
-        password = criptografar(password);
-        this.password = password;
+        String a = criptografar(password);
+        this.password = a;
     }
 
-    public Dados getDados() {
-        return this.dados;
-    }
-
-    public void setDados(Dados dados) {
-        //tem que aplicar criptografia
-        this.dados = dados;
-    }
+    
     //Método criptografia XOR - soma uma string com outra, repete.
     //Tem que testar, ver a questão de segurança.
     public String criptografar(String plaintext) {

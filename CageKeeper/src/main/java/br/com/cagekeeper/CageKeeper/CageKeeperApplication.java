@@ -15,15 +15,13 @@ public class CageKeeperApplication {
 		usuarioSalvaTest();
 	}
 	public static void usuarioSalvaTest() {
-		Dados data = new Dados();
-		List lista = new ArrayList<>();
-		lista.add("Senha 1");
-		lista.add("Senha 2");
-		data.setDados(lista);
 		Usuario user = new Usuario();
 		user.setNome("Joseph Joestar");
-		user.setDados(data);
+		user.setDados("Exemplo dedadosdasdsww");
 		user.setPassword("12345");
 		Assert.isTrue(user.getId() != null);
+		System.out.println(user.getNome());
+		System.out.println(user.getPassword());
+		System.out.println(user.getDados());
 	}
 }
