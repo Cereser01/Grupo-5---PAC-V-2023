@@ -19,7 +19,6 @@ public class CageKeeperApplication {
 		user.setNome("Joseph Joestar");
 		user.setDados("Exemplo dedadosdasdsww");
 		user.setPassword("12345");
-		Assert.isTrue(user.getId() != null);
 		System.out.println(user.getNome());
 		System.out.println(user.getPassword());
 		System.out.println(user.getDados());
