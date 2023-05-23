@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <title>CageKeeper - Home</title>
+    <title>CageKeeper - Login</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/CageKeeper_Favicon.png" />
-    <script src="testesenha/Password-Strength-Meter-main/script.js" defer></script>
 </head>
 
 <body>
@@ -19,27 +17,19 @@
     <div id="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-
                 <a class="navbar-brand" href="#"><img src="assets/CageKeeper_Logo.png" width="400"
                         class="d-inline-block align-top" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#vantagens">Criar Conta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#historia">CyberSegurança</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Gerador de Senhas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Ajuda</a>
@@ -53,15 +43,27 @@
             </nav>
         </div>
     </div>
+    <!-- HEADER -->
 
-    <h1>Verifique a segurança de sua senha</h1>
-    <div class="strength-meter" id="strength-meter"></div>
-    <div class="input-container">
-        <i class="fa fa-eye" id="show-hide"></i>
-        <input type="text" name="password" id="password" value="PassWOrd1452" autofocus>
+    <!-- SOBRE -->
+    <div id="sobre">
+        <div class="container"style="width: 350px; margin-top: 0px; height: 800px">
+            <div class="center">
+                <br><br>
+                <div id="overlay" style="background-image: url('assets/cage.png'); width: 350px; height: 400px; background-size: 350px 400px;">
+                    <form id="login-form" style="width: 50%; margin: 0 auto;">
+                    <br><br><br><br><br><br><br><br>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required /><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required /><br><br>
+                    <button type="submit">Login</button><br>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="checks" class="checks-container">
-    </div>
+    <!-- SOBRE -->
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
@@ -110,7 +112,7 @@
                             <i class="fas fa-gem me-3"></i>Company name
                         </h6>
                         <p>
-                            Jecatronics Incorporated - All Rights Reserved
+                            CageKeeper Incorporated - All Rights Reserved
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -166,7 +168,7 @@
                         <p><i class="fas fa-home me-3"></i> Corupá, SC 10012, BR</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
-                            contact@jecatronics.com
+                            contact@cagekeeper.com
                         </p>
                         <p><i class="fas fa-phone me-3"></i> + 47 3634 3630</p>
                         <p><i class="fas fa-print me-3"></i> + 47 3234 5678</p>
@@ -180,18 +182,18 @@
 
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            jecatronics
+            © 2023 Copyright:
+            cagekeeper
         </div>
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                        crossorigin="anonymous"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                    <script src="js/main.js"></script>
 
 </body>
 

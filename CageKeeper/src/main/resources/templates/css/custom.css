@@ -68,11 +68,6 @@ html {
     border-bottom: solid 4px white;
 }
 
-#textao div.row {
-    margin-top: 100px;
-    ;
-}
-
 #textao div.texto {
     padding: 40px;
     border-radius: 5px;
@@ -82,7 +77,6 @@ html {
 }
 
 #team div.container {
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 
