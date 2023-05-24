@@ -1,0 +1,21 @@
+h1,h2,h3,h4,h5,h6{
+   font-weight: 700; 
+}
+.button{
+    text-transform: lowercase;
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    color: black;
+    background-color: var(--secondary);
+}
+.button:hover{
+    background-color:var(--secondary-dark);
+    color: black;
+}
+a{
+    color:var(--secondary);
+}
+a:hover{
+    color:var(--secondary-dark);
+}

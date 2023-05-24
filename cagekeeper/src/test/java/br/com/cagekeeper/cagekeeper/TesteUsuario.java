@@ -1,14 +1,17 @@
 package br.com.cagekeeper.cagekeeper;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.ArgumentMatchers.notNull;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.util.Assert;
+
+import br.com.cagekeeper.cagekeeper.dao.UsuarioRepository;
 
 @SpringBootTest
 public class TesteUsuario {
+	@Autowired
+	private UsuarioRepository repository;
     @Test
     public static void usuarioSalvaTest() {
 		Usuario user = new Usuario();

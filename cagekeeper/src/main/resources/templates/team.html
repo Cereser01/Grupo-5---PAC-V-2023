@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" th:href="{/css/main.css}">
     <title>CageKeeper - Equipe</title>
-    <link rel="shortcut icon" type="image/jpg" href="assets/CageKeeper_Favicon.png" />
+    <link rel="shortcut icon" type="image/jpg" th:href="@{/assets/CageKeeper_Favicon.png}" />
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
 
-                <a class="navbar-brand" href="#"><img src="assets/CageKeeper_Logo.png" width="400"
+                <a class="navbar-brand" href="#"><img th:src="@{/assets/CageKeeper_Logo.png}" width="400"
                         class="d-inline-block align-top" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
                         <div class="caixa col-lg-2">
 
                             <div id=teamimage class="img-container mb-3">
-                                <img src="assets/Foto_Cereser.jpeg" class="equipeimg img-fluid">
+                                <img th:src="@{/assets/Foto_Cereser.jpeg}" class="equipeimg img-fluid">
                             </div>
                             <br>
                             <h5>Bruno Ceresér</h5>
@@ -64,7 +64,7 @@
                         <div class="caixa col-lg-2 border">
 
                             <div id=teamimage class="img-container mb-3">
-                                <img src="assets/julio.png" class="equipeimg img-fluid">
+                                <img th:src="@{/assets/julio.png}" class="equipeimg img-fluid">
                             </div>
                             <br>
                             <h5>Júlio Spezzia de Souza</h5>
@@ -75,7 +75,7 @@
                         <div id=teamimage class="caixa col-lg-2 border">
 
                             <div class="img-container mb-3">
-                                <img src="assets/Alceu.jpg" class=" equipeimg img-fluid">
+                                <img th:src="@{/assets/Alceu.jpg}" class=" equipeimg img-fluid">
                             </div>
                             <br>
                             <h5>Fernando Paludo</h5>
@@ -86,7 +86,7 @@
                         <div id=teamimage class="caixa col-lg-2 border">
 
                             <div class="img-container mb-3">
-                                <img src="assets/vitor.jfif" class=" equipeimg img-fluid">
+                                <img th:src="@{/assets/vitor.jfif}" class=" equipeimg img-fluid">
                             </div>
                             <br>
                             <h5>Vitor dos Santos</h5>
@@ -227,7 +227,7 @@
                         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
                         crossorigin="anonymous"></script>
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                    <script src="js/main.js"></script>
+                    <script th:src="@{/js/main.js}"></script>
 
 </body>
 
