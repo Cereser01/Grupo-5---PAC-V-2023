@@ -2,13 +2,14 @@ package br.com.cagekeeper.cagekeeper;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table
 public class Usuario {
-    @Id
-    @GeneratedValue
-    private Long id;
+    @Id private Long id;
     private String nome;
     private String password;
     private String dados;
@@ -23,7 +24,9 @@ public class Usuario {
         String a = criptografar(dados);
         this.dados = a;
     }
-
+    public void setId(Long id){
+        this.id = id;
+    };
     public Long getId() {
         return this.id;
     }

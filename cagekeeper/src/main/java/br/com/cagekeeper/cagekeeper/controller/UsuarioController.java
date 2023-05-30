@@ -7,29 +7,12 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import br.com.cagekeeper.cagekeeper.dao.UsuarioRepository;
+import br.com.cagekeeper.cagekeeper.dao.NewRepository;
 @Controller
 @RequestMapping("usuario")
 public class UsuarioController {
 
 	@Autowired
-	private UsuarioRepository usuarioRepository;
+	private NewRepository usuarioRepository;
 	
-
-	//@GetMapping("formulario")
-	/*public String formulario(RequisicaoNovoUsuario requisicaoNovoUsuario, Model model) {
-		
-		return "funcionario/formulario";
-	}*/
-	
-	/*@PostMapping("novo")
-	public String novo(@Valid RequisicaoNovoFuncionario requisicaoNovoFuncionario, BindingResult result) {
-		if(result.hasErrors()) {
-			return "funcionario/formulario";
-		} else {
-			Funcionario f = requisicaoNovoFuncionario.toFuncionario(cargoRepository);
-			this.funcionarioRepository.save(f);
-			return "redirect:/home";
-		}
-	}*/	
 }
