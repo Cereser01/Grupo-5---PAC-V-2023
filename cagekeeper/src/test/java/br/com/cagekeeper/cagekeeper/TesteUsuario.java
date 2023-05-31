@@ -17,10 +17,10 @@ public class TesteUsuario {
     @Test
     public void usuarioSalvaTest() {
 		Usuario user = new Usuario();
-		user.setId(2l);
-		user.setNome("Joseph_Joestar");
-		user.setDados("12345");
-		user.setPassword("12345");
+		user.setId(3l);
+		user.setNome("Eduardo Morias");
+		user.setDados("Eu gosto de todos");
+		user.setPassword("vacasnegrasdaoleite");
 		repository.save(user);
 		System.out.println(user.getNome());
 		System.out.println(user.getPassword());
