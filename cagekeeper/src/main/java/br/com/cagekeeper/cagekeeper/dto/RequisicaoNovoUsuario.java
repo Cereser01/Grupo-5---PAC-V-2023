@@ -40,11 +40,11 @@ public class RequisicaoNovoUsuario {
         this.usuarioDados = usuarioDados;
     }
     public Usuario toUsuario(NewRepository usuario){
-        Usuario usuario = new Usuario();
-        usuario.setNome(usuarioNome);
-        usuario.setPassword(usuarioPassword);
-        usuario.setDados(usuarioDados);
-        return usuario;
+        Usuario a = new Usuario();
+        a.setNome(usuarioNome);
+        a.setPassword(usuarioPassword);
+        a.setDados(usuarioDados);
+        return a;
     }
 
 }

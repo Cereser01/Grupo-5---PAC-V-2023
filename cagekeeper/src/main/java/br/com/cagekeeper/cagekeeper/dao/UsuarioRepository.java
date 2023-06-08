@@ -9,9 +9,6 @@ import br.com.cagekeeper.cagekeeper.Usuario;
 
 @Repository
 public interface UsuarioRepository extends PagingAndSortingRepository<Usuario, Long>{
-	List<Usuario> findByNome(String nome);
-
-	@Query(value="Select a.id, a.nome, from Usuario a ", 
-			nativeQuery=true)
-	List<UsuarioProjecao> listUsuarioProjecao();
+	
+    
 }
