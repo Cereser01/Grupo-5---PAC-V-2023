@@ -17,9 +17,9 @@ public class TesteUsuario {
     @Test
     public void usuarioSalvaTest() {
 		Usuario user = new Usuario();
-		user.setId(3l);
-		user.setNome("Eduardo Morias");
-		user.setDados("Eu gosto de todos");
+		user.setId(6l);
+		user.setNome("Eduardo_Morias");
+		user.setDados("Eu_gosto_de_todos");
 		user.setPassword("vacasnegrasdaoleite");
 		repository.save(user);
 		System.out.println(user.getNome());
