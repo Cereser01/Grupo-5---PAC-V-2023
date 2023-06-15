@@ -127,13 +127,14 @@ html {
 }
 
 .input-container {
-    margin: 1rem;
-    position: relative;
+    margin: 3rem;
+    position:static
+    
 }
 
 .input-container input {
-    height: 2rem;
-    width: 25%;
+    height: 3rem;
+    width: 70%;
     margin: 0 auto;
     background-color: transparent;
     border: 3px solid white;
@@ -164,7 +165,7 @@ html {
 }
 
 .checks-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: left;
     display: -webkit-box;
@@ -180,8 +181,8 @@ html {
 }
 
 .checks {
-    position: relative;
-    width: 25%;
+    position: absolute;
+    width: 60%;
     visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
