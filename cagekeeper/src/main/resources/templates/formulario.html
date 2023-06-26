@@ -10,31 +10,56 @@
     <link rel="shortcut icon" type="image/jpg" th:href="@{/assets/CageKeeper_Favicon.png}" />
 </head>
 <body>	
+    <div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+
+                <a class="navbar-brand" href="#"><img th:src="@{/assets/CageKeeper_Logo.png}" width="400"
+                        class="d-inline-block align-top" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/passwordmanagement">Gerador de Senhas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Voltar</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
     <div class="container">
         <div ></div>
            <form th:object="${requisicaoNovoUsuario}" class="card-body" action="/Usuario/novo" method="POST">
                <div class="form-group">
                    <label for="usuarioId">Id</label>
                    <input th:field="*{usuarioId}" th:errorClass="is-invalid" class="form-control"
-                       placeholder="Id do funcionario" /> <small>Informa o Id do funcionario</small>
+                       placeholder="Id do usuário" /> <small>Informa o Id do usuário</small>
                    <div class="invalid-feedback" th:errors="*{usuarioId}"></div>
                </div>
                <div class="form-group">
                 <label for="usuarioNome">Nome</label>
                 <input th:field="*{usuarioNome}" th:errorClass="is-invalid" class="form-control"
-                    placeholder="Nome do funcionario" /> <small>Informa qual o nome do Usuario</small>
+                    placeholder="Nome do usuário" /> <small>Informa qual o nome do Usuário</small>
                 <div class="invalid-feedback" th:errors="*{usuarioNome}"></div>
             </div>
             <div class="form-group">
                 <label for="usuarioPassword">Senha</label>
                 <input th:field="*{usuarioPassword}" th:errorClass="is-invalid" class="form-control"
-                    placeholder="Senha do funcionario" /> <small>Informa qual a Senha do Usuario</small>
+                    placeholder="Senha do usuário" /> <small>Informa qual a Senha do Usuário</small>
                 <div class="invalid-feedback" th:errors="*{usuarioPassword}"></div>
             </div>
             <div class="form-group">
                 <label for="usuarioDados">Dado</label>
                 <input th:field="*{usuarioDados}" th:errorClass="is-invalid" class="form-control"
-                    placeholder="Dado do funcionario" /> <small>Informa qual um dado para ser guardado</small>
+                    placeholder="Dado do usuário" /> <small>Informa um dado para ser guardado</small>
                 <div class="invalid-feedback" th:errors="*{usuarioDados}"></div>
             </div>
                

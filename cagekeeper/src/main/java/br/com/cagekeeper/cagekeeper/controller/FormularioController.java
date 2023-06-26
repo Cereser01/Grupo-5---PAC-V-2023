@@ -15,7 +15,7 @@ import br.com.cagekeeper.cagekeeper.dao.UsuarioRepository;
 import br.com.cagekeeper.cagekeeper.dto.RequisicaoNovoUsuario;
 
 @Controller
-@RequestMapping("usuario")
+@RequestMapping("")
 public class FormularioController {
     @Autowired
     private UsuarioRepository usuarioRepository;

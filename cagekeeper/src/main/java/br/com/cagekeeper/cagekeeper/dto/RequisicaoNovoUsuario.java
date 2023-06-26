@@ -9,7 +9,7 @@ public class RequisicaoNovoUsuario {
     private String usuarioDados;
 
     public Long getUsuarioId() {
-        return this.usuarioId;
+        return usuarioId;
     }
 
     public void setUsuarioId(Long usuarioId) {
@@ -17,7 +17,7 @@ public class RequisicaoNovoUsuario {
     }
 
     public String getUsuarioNome() {
-        return this.usuarioNome;
+        return usuarioNome;
     }
 
     public void setUsuarioNome(String usuarioNome) {
@@ -25,7 +25,7 @@ public class RequisicaoNovoUsuario {
     }
 
     public String getUsuarioPassword() {
-        return this.usuarioPassword;
+        return usuarioPassword;
     }
 
     public void setUsuarioPassword(String usuarioPassword) {
@@ -33,7 +33,7 @@ public class RequisicaoNovoUsuario {
     }
 
     public String getUsuarioDados() {
-        return this.usuarioDados;
+        return usuarioDados;
     }
 
     public void setUsuarioDados(String usuarioDados) {
