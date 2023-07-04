@@ -39,12 +39,6 @@
         <div ></div>
            <form th:object="${requisicaoNovoUsuario}" class="card-body" action="/usuario/novo" method="POST">
                <div class="form-group">
-                   <label for="usuarioId">Id</label>
-                   <input th:field="*{usuarioId}" th:errorClass="is-invalid" class="form-control"
-                       placeholder="Id do usuário" /> <small>Informa o Id do usuário</small>
-                   <div class="invalid-feedback" th:errors="*{usuarioId}"></div>
-               </div>
-               <div class="form-group">
                 <label for="usuarioNome">Nome</label>
                 <input th:field="*{usuarioNome}" th:errorClass="is-invalid" class="form-control"
                     placeholder="Nome do usuário" /> <small>Informa qual o nome do Usuário</small>

@@ -17,7 +17,6 @@ public class TesteUsuario {
     @Test
     public void usuarioSalvaTest() {
 		Usuario user = new Usuario();
-		user.setId(6l);
 		user.setNome("Eduardo_Morias");
 		user.setDados("Eu_gosto_de_todos");
 		user.setPassword("vacasnegrasdaoleite");
