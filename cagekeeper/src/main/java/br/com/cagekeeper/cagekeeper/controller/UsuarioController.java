@@ -1,7 +1,6 @@
 package br.com.cagekeeper.cagekeeper.controller;
 
 
-import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +14,7 @@ import br.com.cagekeeper.cagekeeper.Usuario;
 import br.com.cagekeeper.cagekeeper.dao.NewRepository;
 import br.com.cagekeeper.cagekeeper.dao.UsuarioRepository;
 import br.com.cagekeeper.cagekeeper.dto.RequisicaoNovoUsuario;
+import jakarta.validation.Valid;
 @Controller
 @RequestMapping("usuario")
 public class UsuarioController {
@@ -28,7 +28,7 @@ public class UsuarioController {
 		return "/formulario";
 	}
 	@PostMapping("novo")
-	public String novo(@jakarta.validation.Valid RequisicaoNovoUsuario requisicaoNovoUsuario, BindingResult result) {
+	public String novo(@Valid RequisicaoNovoUsuario requisicaoNovoUsuario, BindingResult result) {
 		if(result.hasErrors()) {
 			return "/formulario";
 		} else {

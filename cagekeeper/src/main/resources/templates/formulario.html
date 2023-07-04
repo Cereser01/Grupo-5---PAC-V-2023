@@ -37,7 +37,7 @@
     </div>
     <div class="container">
         <div ></div>
-           <form th:object="${requisicaoNovoUsuario}" class="card-body" action="/Usuario/novo" method="POST">
+           <form th:object="${requisicaoNovoUsuario}" class="card-body" action="/usuario/novo" method="POST">
                <div class="form-group">
                    <label for="usuarioId">Id</label>
                    <input th:field="*{usuarioId}" th:errorClass="is-invalid" class="form-control"

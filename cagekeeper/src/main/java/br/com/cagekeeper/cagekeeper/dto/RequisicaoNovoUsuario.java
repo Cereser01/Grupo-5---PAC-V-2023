@@ -41,6 +41,7 @@ public class RequisicaoNovoUsuario {
     }
     public Usuario toUsuario(NewRepository usuario){
         Usuario a = new Usuario();
+        a.setId(usuarioId);
         a.setNome(usuarioNome);
         a.setPassword(usuarioPassword);
         a.setDados(usuarioDados);
