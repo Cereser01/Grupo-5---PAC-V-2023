@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <title>CageKeeper - CyberSegurança</title>
+    <link rel="shortcut icon" type="image/jpg" th:href="@{/assets/CageKeeper_Favicon.png}" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+
+                <a class="navbar-brand" href="#"><img th:src="@{/assets/CageKeeper_Logo.png}" width="400"
+                        class="d-inline-block align-top" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/cybersecurity">CyberSegurança</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/passwordmanagement">Gerador de Senhas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/usuario/formulario">Criar conta</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+           <!-- SOBRE -->
+
+    <div id="sobre">
+        <div class="row">
+            <div class="col-md-6 text-center align-self-center order-2">
+                <img th:src="@{/assets/User-Experience-Research.png}" class="img-fluid">
+            </div>
+            <div class="col-md-6 align-self-center order-1" style="padding-left: 50px;">
+                <br><h2>TERMO DE CONSENTIMENTO</h2><br>
+
+                <p id="vantagens">
+                    <strong>PÁGRAFO PRIMEIRO - DO CONSENTIMENTO </strong>
+
+ 
+
+<br>Ao assinar este termo o <strong>TITULAR</strong> concorda que a <strong>CONTROLADORA</strong>, proceda com o <strong>tratamento</strong> de seus dados. 
+
+ 
+
+Entende-se por tratamento de acordo com o artigo 5º inciso X, a coleta, produção,<br> 
+recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição,<br>
+ processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da <br>
+ informação, modificação, comunicação, transferência, difusão ou extração.<br>
+
+ 
+
+ 
+
+<strong>PARÁGRAFO SEGUNDO - DADOS PESSOAIS </strong>
+
+ 
+
+<br>Poderão ser tratados mediante anuência expressa do titular/ responsável os seguintes<br>
+dados pessoais, pelo(a) controlador(a):<br>
+
+ 
+
+- Nome, dado opcionalmente sensível da escolha do Titular.<br>
+
+ 
+
+ 
+
+<strong>PÁGRAFO TERCEIRO - FINALIDADE DO TRATAMENTO</strong><br>
+
+ 
+
+Em atendimento ao artigo 8º §4 este termo guarda finalidade determinada, sendo que
+<br>os dados serão utilizados especificamente para fins de:<br>
+
+ 
+
+- Cadastro. <br>
+
+- Serviço de criptografia de dados. <br>
+
+ 
+
+ 
+
+<strong>PARÁGRAFO QUARTO - SEGURANÇA DOS DADOS</strong> <br>
+
+ 
+
+A Controladora responsabiliza-se pela manutenção de medidas de segurança, técnicas e<br>
+administrativas aptas a proteger os dados pessoais de acessos não autorizados e de<br>
+situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou qualquer<br>
+forma de tratamento inadequado ou ilícito. <br>
+
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!-- SOBRE -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span></span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Company name
+                        </h6>
+                        <p>
+                            Jecatronics Incorporated - All Rights Reserved
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 id="contato" class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Corupá, SC 10012, BR</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            contact@jecatronics.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 47 3634 3630</p>
+                        <p><i class="fas fa-print me-3"></i> + 47 3234 5678</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            jecatronics
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script th:src="@{/js/main.js}"></script>
+
+</body>
+
+</html>

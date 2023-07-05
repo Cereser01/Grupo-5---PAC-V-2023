@@ -23,14 +23,14 @@ public class UsuarioController {
 	private NewRepository newRepository;
 	@Autowired
 	private UsuarioRepository usuarioRepository;
-	@GetMapping("formulario")
+	@GetMapping("/formulario")
 	public String formulario(RequisicaoNovoUsuario requisicaoNovoUsuario) {
-		return "/formulario";
+		return "formulario";
 	}
 	@PostMapping("novo")
 	public String novo(@Valid RequisicaoNovoUsuario requisicaoNovoUsuario, BindingResult result) {
 		if(result.hasErrors()) {
-			return "/formulario";
+			return "formulario";
 		} else {
 			Usuario f = requisicaoNovoUsuario.toUsuario(newRepository);
 			this.newRepository.save(f);
