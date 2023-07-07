@@ -127,8 +127,16 @@ html {
 }
 
 .input-container {
-    margin: 3rem;
-    position:static
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position:relative
     
 }
 
@@ -148,6 +156,7 @@ html {
     padding: 1rem;
     -webkit-transition: 200ms linear;
     transition: 200ms linear;
+    
 }
 
 .input-container .input:focus,
@@ -181,15 +190,27 @@ html {
 }
 
 .checks {
-    position: absolute;
+   /* position: relative;*/
     width: 60%;
     visibility: hidden;
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    align-items: center;*/
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    position:relative
+    
 }
 
 .checks .reasons {
@@ -218,4 +239,7 @@ html {
 
 .checks.success .fa-exclamation-circle {
     visibility: hidden;
+}
+.outer{
+    
 }
